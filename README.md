@@ -1,6 +1,6 @@
 # webpacke-simple
 
-> A ES2015 demo project
+> A ES2015 seed project
 
 ## Build Setup
 
