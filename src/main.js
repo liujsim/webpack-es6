@@ -7,16 +7,15 @@ var body = document.querySelector('body')
 body.textContent = 'webpack-es6-seed Good point: ' + new Point(1, 100)
 
 // Confirm
-new Confirm({ message:'离开页面吗?',cancelButtonText:'取消',confirmButtonText:'确定'},function(){
+Confirm({ message: 'Are you sure?', cancelButtonText: '取消', confirmButtonText: '确定' }, function () {
   console.log('cancel 调用')
-},function (){
+}, function (){
   console.log('confirm 调用')
 })
 
 // default value
-document.write("<br>" + new Person().say())
+document.write('<br>' + new Person().say())
 
 // object param
-document.write("<br>" + new Person({name: 'liujs', age: '25', msg: 'I’m happy'}, function () {
-  }).say())
+document.write('<br>' + new Person({name: 'liujs', age: '25', msg: 'I’m happy'}, function () {}).say())
 

@@ -30,13 +30,12 @@ class Confirm {
   }
 
   init () {
-    document.querySelector('.dialog_cancel').addEventListener('click', ()=> {
-        if (typeof this.cancel === 'function') {
-          this.cancel()
-        }
-        this.destroy()
+    document.querySelector('.dialog_cancel').addEventListener('click', () => {
+      if (typeof this.cancel === 'function') {
+        this.cancel()
       }
-      , false)
+      this.destroy()
+    }, false)
     document.querySelector('.dialog_confirm').addEventListener('click', () => {
       if (typeof this.confirm === 'function') {
         this.confirm()
@@ -53,4 +52,14 @@ class Confirm {
   }
 }
 
-export default Confirm
+function confirm ({message, cancelButtonText, confirmButtonText}, cancel, confirm) {
+  return new Confirm({
+    message,
+    cancelButtonText,
+    confirmButtonText,
+    cancel,
+    confirm
+  })
+}
+
+export default confirm
