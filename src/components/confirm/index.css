@@ -1,0 +1,60 @@
+button {
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.ui_mask,
+.ui_mask_transition,
+.ui_mask_transparent {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ui_mask {
+  background: rgba(0, 0, 0, .6);
+}
+
+.ui_confirm {
+  position: fixed;
+  width: 80%;
+  height: 130px;
+  background: white;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ui_dialog_bd {
+  height: 70%;
+  border-bottom: 1px solid #d5d5d6;
+}
+
+.ui_dialog_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ui_dialog_ft {
+  display: flex;
+  height: 30%;
+  background: white;
+}
+
+.ui_dialog_btn {
+  flex: 1;
+}
+
+.dialog_cancel {
+  border-right: 1px solid #ddd;
+}
