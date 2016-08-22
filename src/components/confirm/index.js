@@ -7,7 +7,6 @@ class Confirm {
     this.message = message
     this.cancelButtonText = cancelButtonText
     this.confirmButtonText = confirmButtonText
-    debugger
     this.cancel = cancel
     this.confirm = confirm
     this.html = `
