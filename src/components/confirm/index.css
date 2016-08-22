@@ -25,6 +25,7 @@ button {
 
 .ui_confirm {
   position: fixed;
+  color: #333;
   width: 80%;
   height: 130px;
   background: white;

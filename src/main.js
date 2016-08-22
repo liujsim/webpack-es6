@@ -8,7 +8,7 @@ body.textContent = 'webpack-es6-seed Good point: ' + new Point(1, 100)
 
 // Confirm
 Confirm({ message: 'Are you sure?', cancelButtonText: '取消', confirmButtonText: '确定' }, function () {
-  console.log('cancel 调用')
+  console.log(new Person().say())
 }, function (){
   console.log('confirm 调用')
 })

@@ -7,6 +7,7 @@ class Confirm {
     this.message = message
     this.cancelButtonText = cancelButtonText
     this.confirmButtonText = confirmButtonText
+    debugger
     this.cancel = cancel
     this.confirm = confirm
     this.html = `
@@ -56,10 +57,8 @@ function confirm ({message, cancelButtonText, confirmButtonText}, cancel, confir
   return new Confirm({
     message,
     cancelButtonText,
-    confirmButtonText,
-    cancel,
-    confirm
-  })
+    confirmButtonText
+  }, cancel, confirm)
 }
 
 export default confirm
