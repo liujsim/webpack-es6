@@ -1,4 +1,4 @@
-# webpacke-simple
+# webpack-simple
 
 > A ES2015 seed project
 

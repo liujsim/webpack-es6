@@ -5,20 +5,11 @@ div[class^="password-container"]{
   position: relative;
 }
 
-/*.password-container {*/
-  /*width: 240px;*/
-  /*height: 50px;*/
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-/*}*/
-
 div[class^="password-container"] .bogusInput {
   width: 100%;
   height: 100%;
   border: #c3c3c3 1px solid;
   border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
   overflow: hidden;
   position: absolute;
   z-index: 0;

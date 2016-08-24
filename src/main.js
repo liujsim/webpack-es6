@@ -28,4 +28,3 @@ document.write('<br>' + new Person().say())
 
 // object param
 document.write('<br>' + new Person({name: 'liujs', age: '25', msg: 'I’m happy'}, function () {}).say())
-

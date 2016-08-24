@@ -8,6 +8,10 @@ button {
   outline: none;
 }
 
+p {
+  margin: 0 0 1rem;
+}
+
 .ui_mask,
 .ui_mask_transition,
 .ui_mask_transparent {
@@ -25,37 +29,73 @@ button {
 
 .ui_confirm {
   position: fixed;
+  width: 85%;
   color: #333;
-  width: 80%;
-  height: 130px;
+  height: 2.826667rem;
   background: white;
+  border-radius: 3px;
+  font-size: 16px;
   z-index: 10;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  transition: .2s .1s;
 }
 
+[data-dpr="2"] .ui_confirm {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .ui_confirm {
+  font-size: 36px;
+}
 .ui_dialog_bd {
-  height: 70%;
   border-bottom: 1px solid #d5d5d6;
 }
 
 .ui_dialog_content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 100%;
+  font-size: 14px;
+  padding: 5px 10px;
+  /*   position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+[data-dpr="2"] .ui_dialog_content {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .ui_dialog_content {
+  font-size: 36px;
 }
 
 .ui_dialog_ft {
   display: flex;
-  height: 30%;
+  /*height: 1.066667rem ;*/
+  /*line-height: 1.066667rem ;*/
   background: white;
 }
 
 .ui_dialog_btn {
   flex: 1;
+  font-size: 14px;
+  float: left;
+  width: 50%;
+  height: inherit;
+  overflow: hidden;
+}
+
+[data-dpr="2"] .ui_dialog_btn{
+  font-size: 24px;
+}
+
+[data-dpr="3"] .ui_dialog_btn{
+  font-size: 36px;
 }
 
 .dialog_cancel {
   border-right: 1px solid #ddd;
+  overflow: hidden;
 }

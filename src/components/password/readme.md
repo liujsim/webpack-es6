@@ -7,6 +7,7 @@
 
 new Password(className, )
 
+支持在页面初始化多个 password 组件
 
 ```
 let password1 = new Password('.password-container-1', function(){})

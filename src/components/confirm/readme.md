@@ -1,4 +1,4 @@
-usage
+### usage
 
 ```
 import Confirm from 'confirm/index.js'
