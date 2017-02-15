@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -8,13 +14,14 @@ button {
   outline: none;
 }
 
-p {
-  margin: 0 0 1rem;
+p,button {
+  margin: 0 ;
+  padding: 0;
 }
 
-.ui_mask,
-.ui_mask_transition,
-.ui_mask_transparent {
+.ui-mask,
+.ui-mask-transition,
+.ui-mask-transparent {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -23,17 +30,16 @@ p {
   left: 0;
 }
 
-.ui_mask {
-  background: rgba(0, 0, 0, .6);
+.ui-mask {
+  background: rgba(0, 0, 0, .2);
 }
 
-.ui_confirm {
+.ui-dialog {
   position: fixed;
-  width: 85%;
+  width: 80%;
   color: #333;
-  height: 2.826667rem;
-  background: white;
-  border-radius: 3px;
+  background: RGBA(245, 245, 245, 1.00);
+  border-radius: 10px;
   font-size: 16px;
   z-index: 10;
   left: 50%;
@@ -43,59 +49,37 @@ p {
   transition: .2s .1s;
 }
 
-[data-dpr="2"] .ui_confirm {
+[data-dpr="2"] .ui-confirm {
   font-size: 32px;
 }
 
-[data-dpr="3"] .ui_confirm {
+[data-dpr="3"] .ui-confirm {
   font-size: 36px;
 }
-.ui_dialog_bd {
-  border-bottom: 1px solid #d5d5d6;
+.ui-dialog-content {
+  padding: 30px;
+  color: #3C3939;
+  border-bottom: 1px solid #ddd;
 }
-
-.ui_dialog_content {
-  height: 100%;
-  font-size: 14px;
-  padding: 5px 10px;
-  /*   position: relative;
-    top: 50%;
-    transform: translateY(-50%); */
-}
-
-[data-dpr="2"] .ui_dialog_content {
-  font-size: 28px;
-}
-
-[data-dpr="3"] .ui_dialog_content {
-  font-size: 36px;
-}
-
-.ui_dialog_ft {
+.ui-dialog-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  /*height: 1.066667rem ;*/
-  /*line-height: 1.066667rem ;*/
-  background: white;
+  height: 50px;
+  line-height: 40px;
 }
-
-.ui_dialog_btn {
+.ui-dialog-btn {
+  color: #3B8BFA;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
-  font-size: 14px;
-  float: left;
-  width: 50%;
-  height: inherit;
-  overflow: hidden;
+  display: block;
+  border: 0;
+  font-size: 16px;
 }
-
-[data-dpr="2"] .ui_dialog_btn{
-  font-size: 24px;
+.ui-dialog-btn:active {
+  /* background: black; */
 }
-
-[data-dpr="3"] .ui_dialog_btn{
-  font-size: 36px;
-}
-
-.dialog_cancel {
+.dialog-cancel {
   border-right: 1px solid #ddd;
-  overflow: hidden;
 }
